@@ -30,7 +30,7 @@ class ContactMapElementConfigExtension extends DataExtension
     public function updateCMSFields(FieldList $fields)
     {
         parent::updateCMSFields($fields);
-        $grid = GridField::create('Locations', 'Locations', ContactLocation::get(),
+        $grid = GridField::create('ContactLocations', 'ContactLocations', ContactLocation::get(),
             GridFieldConfig_RecordEditor::create()->addComponent(new GridFieldOrderableRows()));
 
         $fields->addFieldsToTab('Root.ContactLocations', [
