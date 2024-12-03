@@ -24,7 +24,7 @@ class ContactMapElementController extends ElementController
             Requirements::css('biffbangpow/silverstripe-contactmap-element:client/dist/css/osm.css', '', ['defer' => true]);
         }
 
-        $themeCSS = ThemeResourceLoader::inst()->findThemedCSS('client/dist/css/elements/textandvideo');
+        $themeCSS = ThemeResourceLoader::inst()->findThemedCSS('client/dist/css/elements/contactmap.css');
         if ($themeCSS) {
             Requirements::css($themeCSS, '', ['defer' => true]);
         }
